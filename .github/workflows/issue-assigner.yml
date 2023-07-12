@@ -4,7 +4,7 @@ on:
     types: [opened]
 jobs:
  auto-assign:
-  runs-on: ubuntu-latest
+  runs-on: node16
   steps:
   - name: 'Auto-assign issue'
     uses: pozil/auto-assign-issue@v1.0.3
