@@ -4,10 +4,10 @@ on:
     types: [opened]
 jobs:
  auto-assign:
-  runs-on: node16
+  runs-on: ubuntu-latest
   steps:
-  - name: 'Auto-assign issue'
-    uses: pozil/auto-assign-issue@v1.0.3
+  - name: Auto-assign Issue
+    uses: pozil/auto-assign-issue@v1.11.0
     with:
      repo-token: ${{ secrets.GITHUB_TOKEN }}
      assignees: testesdapri
